@@ -19,7 +19,6 @@
 /tests/
 /app/
 bootstrap/
-src/config/
 database/
 public/
 routes/
