@@ -22,7 +22,7 @@ trait CustomersCategoriesExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer_category';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId
@@ -51,7 +51,7 @@ trait CustomersCategoriesExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer_category/add';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,
@@ -82,7 +82,7 @@ trait CustomersCategoriesExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer_category/remove';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,

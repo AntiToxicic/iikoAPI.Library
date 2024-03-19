@@ -35,7 +35,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/calculate';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'order' => $order,
@@ -70,7 +70,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/manual_condition';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId
@@ -98,7 +98,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/program';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -128,7 +128,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/coupons/info';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -157,7 +157,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/coupons/series';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId
@@ -187,7 +187,7 @@ trait DiscountPromotionExtension
     {
         $methodName = 'api/1/loyalty/iiko/coupons/by_series';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,

@@ -30,7 +30,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/nomenclature';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -58,7 +58,7 @@ trait MenuExtension
     {
         $methodName = 'api/2/menu';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $response = Http::withToken(iikoClient::$sessionToken)->post($url);
 
@@ -87,7 +87,7 @@ trait MenuExtension
     {
         $methodName = 'api/2/menu/by_id';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'externalMenuId' => $externalMenuId,
@@ -122,7 +122,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/stop_lists';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationIds' => $organizationIds,
@@ -154,7 +154,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/stop_lists/check';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -186,7 +186,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/stop_lists/add';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -218,7 +218,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/stop_lists/remove';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -248,7 +248,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/stop_lists/clear';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -277,7 +277,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/combo';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -306,7 +306,7 @@ trait MenuExtension
     {
         $methodName = 'api/1/combo/calculate';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,

@@ -14,7 +14,7 @@ class iikoClient
     use MenuExtension;
     use OrganizationExtension;
 
-    protected string $baseUrl;
+    public static string $baseUrl;
     public static $sessionToken;
     private $apiLogin;
 
@@ -23,7 +23,7 @@ class iikoClient
      */
     function __construct($apiLogin, $baseUrl)
     {
-        $this->baseUrl = $baseUrl;
+        $this::$baseUrl = $baseUrl;
 
         $this->apiLogin = $apiLogin;
 
@@ -49,7 +49,7 @@ class iikoClient
     {
         $methodName = 'api/1/access_token';
 
-        $url = $this::baseUrl . "/" . $methodName;
+        $url = $this::$baseUrl . "/" . $methodName;
 
          $requestData = [
             'apiLogin' => $this->apiLogin

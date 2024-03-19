@@ -118,7 +118,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/program/add';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,
@@ -150,7 +150,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/card/add';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,
@@ -182,7 +182,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/card/remove';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,
@@ -218,7 +218,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/wallet/hold';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'customerId' => $customerId,
@@ -251,7 +251,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/wallet/cancel_hold';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'transactionId' => $transactionId,
@@ -284,7 +284,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/wallet/topup';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,
@@ -320,7 +320,7 @@ trait CustomerExtension
     {
         $methodName = 'api/1/loyalty/iiko/customer/wallet/chargeoff';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,

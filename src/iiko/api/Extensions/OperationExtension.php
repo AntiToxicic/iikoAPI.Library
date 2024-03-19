@@ -21,7 +21,7 @@ trait OperationExtension
     {
         $methodName = 'api/1/commands/status';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationId' => $organizationId,

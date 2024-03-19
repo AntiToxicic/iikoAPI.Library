@@ -24,7 +24,7 @@ trait OrganizationExtension
     {
         $methodName = 'api/1/organizations';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             'organizationIds'=> $organizationIds,
@@ -57,7 +57,7 @@ trait OrganizationExtension
     {
         $methodName = 'api/1/organizations/settings';
 
-        $url = iikoClient::baseUrl . "/" . $methodName;
+        $url = iikoClient::$baseUrl . "/" . $methodName;
 
         $requestData = [
             '$parameters'=> $parameters,
