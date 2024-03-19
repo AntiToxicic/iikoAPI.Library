@@ -34,7 +34,7 @@ class iikoServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../Http/Resources' => public_path('Http/Resources/vendor/iikoapilibrary')
+                __DIR__ . '/../Http/Resources' => app_path('Http/Resources/vendor/iikoapilibrary')
             ], 'iikoapi-resources');
 
             $this->publishes([
