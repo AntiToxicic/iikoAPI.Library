@@ -22,7 +22,6 @@ bootstrap/
 config/
 database/
 public/
-resources/
 routes/
 server.php
 storage/
