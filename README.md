@@ -31,7 +31,7 @@ Here is a simple example of how to use the iikoAPI client:
 ```bash
 $organization = iikoClientFacade::create()->GetOrganizationsInfo();
 
-$menu = iikoClientFacade::create()->ExportMenu($org['organizations'][0]['id']);
+$menu = iikoClientFacade::create()->ExportMenu($organization['organizations'][0]['id']);
 
 $arr = $menu->toArray(1);
 
