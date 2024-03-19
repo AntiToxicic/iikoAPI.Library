@@ -14,15 +14,17 @@ class iikoClient
     use MenuExtension;
     use OrganizationExtension;
 
-    protected const baseUrl = 'https://api-ru.iiko.services';
+    protected string $baseUrl;
     public static $sessionToken;
     private $apiLogin;
 
     /**
      * @throws iikoHttpException
      */
-    function __construct($apiLogin)
+    function __construct($apiLogin, $baseUrl)
     {
+        $this->baseUrl = $baseUrl;
+
         $this->apiLogin = $apiLogin;
 
         $this::$sessionToken = Cache::get('session_token');

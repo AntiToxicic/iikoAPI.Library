@@ -1,5 +1,5 @@
 {
-    "name": "alextrukhin/iikoapilibrary",
+    "name": "iikoapilibrary/iikoapi",
     "type": "library",
     "description": "The library provides method for work with iikoAPI",
     "keywords": [
@@ -39,7 +39,6 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
