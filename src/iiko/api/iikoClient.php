@@ -5,7 +5,11 @@ namespace IikoApiLibrary\iiko\api;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use IikoApiLibrary\Http\Resources\AuthorizationResource;
+use IikoApiLibrary\iiko\api\Extensions\CustomerExtension;
+use IikoApiLibrary\iiko\api\Extensions\CustomersCategoriesExtension;
+use IikoApiLibrary\iiko\api\Extensions\DiscountPromotionExtension;
 use IikoApiLibrary\iiko\api\Extensions\MenuExtension;
+use IikoApiLibrary\iiko\api\Extensions\OperationExtension;
 use IikoApiLibrary\iiko\api\Extensions\OrganizationExtension;
 use IikoApiLibrary\iiko\Exceptions\iikoHttpException;
 
